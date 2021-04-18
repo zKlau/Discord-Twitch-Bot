@@ -10,6 +10,7 @@ const gm = require('gm');
 var client_id = "client_id";
 var client_secret = 'client_secret';
 
+var token = "token";
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity('type "tw help" for the commands', {
@@ -46,7 +47,7 @@ client.on('message', msg => {
   }); 
 
 
-client.login('NTYyNzEwMzUzNTA3Nzc4NTYw.Xe5INQ.NRjx7nACyxCUMGmrHQ2YqNZz8GY');
+client.login(token);
 
 function GetChannelFollowers(name,message) {
     var id = "000000";
